@@ -1,7 +1,13 @@
-<!doctype html>
-<title>Films</title>
-{% if name %}
-  <h1>Hello {{ name }}!</h1>
-{% else %}
-  <h1>Hello, World!</h1>
-{% endif %}
+{% extends "base.html" %}
+{% block title %} Films {% endblock title %}
+{% block stylesheets %}
+{{ super() }}
+{% endblock stylesheets %}
+{% block content %}
+<div class="page-content">
+  <!-- title bar -->
+asdasdas
+{% endblock content %}
+{% block javascripts %}
+  
+{% endblock javascripts %}
