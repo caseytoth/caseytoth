@@ -1,37 +1,23 @@
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="https://bulma.io">
-      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-    </a>
-
-    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-
-  <div id="navbarBasicExample" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item" href="/">
-        Films
-      </a>
-
-      <a class="navbar-item" href="/images">
-        Images
-      </a>
-
-      <a class="navbar-item" href="/about">
-        About
-      </a>
-
-      <a class="navbar-item" href="/connect">
-        Connect
-      </a>
-    </div>
-
-    <div class="navbar-end">
-
-    </div>
-  </div>
+​
+<div class="container-fluid">
+  ​<img id="main-logo" src="{{ url_for('static',
+    filename='images/header_visual_journalist_72.png') }}" alt="
+    logo">
+</div>
+​
+<nav class="navbar navbar-expand-sm bg-faded navbar-light sticky-top">
+  <ul class="navbar-nav mx-auto">
+    <li class="nav-item text-center">
+      <a class="nav-link" href="/images">Images</a>
+    </li>
+    <li class="nav-item text-center active">
+      <a class="nav-link" href="/">Films</a>
+    </li>
+    <li class="nav-item text-center">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+    <li class="nav-item text-center">
+      <a class="nav-link" href="/connect">Connect</a>
+    </li>
+  </ul>
 </nav>
