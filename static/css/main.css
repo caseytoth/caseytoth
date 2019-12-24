@@ -4,20 +4,24 @@ body {
   font-family: 'Raleway', sans-serif !important;
 }
 
-a {
+.green-link {
   color: #507E35;
 }
 
-a:hover {
+.green-link:hover {
   color: #29411b;
+}
+
+.black-link {
+  color: #000000
+}
+
+.black-link:hover {
+  color: #555555
 }
 
 #main-logo {
   max-width: 400px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
- 
 }
 
 #nav-film-left {
