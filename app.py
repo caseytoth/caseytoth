@@ -1,4 +1,5 @@
-from flask import Flask, url_for, render_template
+from flask import Flask, url_for, render_template, send_file, current_app
+import os
 
 app = Flask(__name__)
 
@@ -30,6 +31,15 @@ def connect():
   '''
   return render_template('connect.html')
 
+@app.route("/download_resume")
+def download_resume():
+  '''
+  download resume
+  '''
+  current_path = os.path.join(current_app.static_folder, 'images')
+  path = os.path.join(current_path, 'toth_casey_resume.pdf')
+  return send_file(path, as_attachment=True)
+
 
 if __name__ == '__main__':
-  app.run()
+  app.run(port=5000)
