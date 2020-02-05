@@ -27,3 +27,10 @@ body {
 #nav-film-left {
   text-align: right;
 }
+
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  color: black;
+}
